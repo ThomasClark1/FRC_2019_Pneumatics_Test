@@ -49,7 +49,7 @@ public class Robot extends TimedRobot {
     m_chooser.addOption("My Auto", kCustomAuto);
     //Turns the compressor on:
     m_compressor.setClosedLoopControl(true);
-    //Makes sure the robot starts with its fly closed
+    //Makes sure the robot starts with its rod hidden
     m_solenoid.set(DoubleSolenoid.Value.kReverse);
     SmartDashboard.putData("Auto choices", m_chooser);
   }
